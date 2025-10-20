@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade - RuínasNet</title>
+    <link rel="stylesheet" href="style-login.css">
+    <style>
+        body { display: block; } 
+        .header-comunidade { background: #2a2a2a; padding: 15px 40px; display: flex; justify-content: space-between; align-items: center; }
+        .header-comunidade h1 { font-size: 1.5em; color: #c8a47e; }
+        .header-comunidade p { font-size: 1em; }
+        #logout-button { background: transparent; border: 1px solid #c8a47e; color: #c8a47e; padding: 8px 12px; }
+        #logout-button:hover { background: #c8a47e; color: #1a1a1a; }
+        
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .post-form { background: #2a2a2a; padding: 30px; border-radius: 8px; margin-bottom: 40px; }
+        .post-form h2 { margin-bottom: 20px; }
+        .post-form input, .post-form textarea { width: 100%; padding: 10px; margin-bottom: 15px; background: #1a1a1a; border: 1px solid #444; color: #f4f4f4; border-radius: 5px; }
+        .post-form textarea { resize: vertical; min-height: 120px; }
+        
+        .post { background: #2a2a2a; padding: 20px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #c8a47e; }
+        .post h3 { color: #c8a47e; margin-bottom: 10px; }
+        .post-meta { font-size: 0.8em; color: #aaa; margin-bottom: 15px; }
+        .post p { line-height: 1.6; }
+    </style>
+</head>
+<body>
+
+    <header class="header-comunidade">
+        <div>
+            <h1>Comunidade RuínasNet</h1>
+            <p>Bem-vindo(a), <span id="user-name"></span>!</p>
+        </div>
+        <button id="logout-button">Sair</button>
+    </header>
+
+    <main class="container">
+        <section class="post-form-container">
+            <form id="post-form" class="post-form">
+                <h2>Compartilhe uma descoberta</h2>
+                <div class="input-group">
+                    <input type="text" id="post-title" placeholder="Título do seu artigo" required>
+                </div>
+                <div class="input-group">
+                    <textarea id="post-content" placeholder="Escreva seu artigo aqui..." required></textarea>
+                </div>
+                <button type="submit">Publicar Artigo</button>
+            </form>
+        </section>
+
+        <section class="posts-list">
+            <h2>Últimas Publicações</h2>
+            <div class="search-container">
+                <input type="search" id="search-input" placeholder="Buscar por título...">
+            </div>
+            <div id="posts-container">
+                </div>
+        </section>
+        
+    </main>
+
+    <script src="comunidade.js" defer></script>
+</body>
+</html>

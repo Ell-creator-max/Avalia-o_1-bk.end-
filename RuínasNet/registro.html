@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - RuínasNet</title>
+    <link rel="stylesheet" href="style-login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form" id="register-form">
+            <h2>Crie sua Conta</h2>
+            <p>Junte-se à nossa comunidade de exploradores da história.</p>
+            
+            <div class="input-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" placeholder="Seu nome completo" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="seu.email@exemplo.com" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Crie uma senha forte" required>
+            </div>
+            
+            <button type="submit">Registrar</button>
+            
+            <div class="form-footer">
+                <p>Já tem uma conta? <a href="login.html">Faça login aqui</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="auth.js" defer></script>
+</body>
+</html>

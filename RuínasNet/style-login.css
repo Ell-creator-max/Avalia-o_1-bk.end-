@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    --cor-fundo: #1a1a1a;          
+    --cor-formulario: #2a2a2a;      
+    --cor-destaque: #c8a47e;         
+    --cor-destaque-hover: #b4916c;   
+    --cor-texto-principal: #f4f4f4;  
+    --cor-texto-secundario: #aaa;    
+    --cor-borda: #444;              
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--cor-fundo);
+    color: var(--cor-texto-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 25px;
+}
+
+.login-form {
+    background: var(--cor-formulario);
+    padding: 45px;
+    border-radius: 12px;
+    border: 1px solid var(--cor-borda);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); 
+    text-align: center;
+}
+
+.login-form h2 {
+    color: var(--cor-texto-principal);
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.login-form p {
+    color: var(--cor-texto-secundario);
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+
+.input-group {
+    text-align: left;
+    margin-bottom: 22px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--cor-texto-principal);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    background: var(--cor-fundo); 
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: var(--cor-texto-principal); 
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--cor-destaque);
+}
+
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: var(--cor-destaque);
+    color: var(--cor-fundo); 
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: var(--cor-destaque-hover);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.form-footer {
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.form-footer a {
+    color: var(--cor-destaque);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
